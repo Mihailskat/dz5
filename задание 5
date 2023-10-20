@@ -1,0 +1,10 @@
+a = input()
+b = input()
+c = input()
+A = set(a.split())
+B = set(b.split())
+C = set(c.split())
+if A&B&C != 0:
+  print(str(A&B&C))
+else: 
+  print('Задачи никто не реешил! ')
