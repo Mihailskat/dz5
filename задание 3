@@ -1,0 +1,8 @@
+s1 = input()
+s2 = input()
+s1 = s1.replace(" ", "").lower()
+s2 = s2.replace(" ", "").lower()
+if set(s1) == set(s2):
+  print("Строки являются анаграммами")
+else:
+  print("Строки не являются анаграммами")
