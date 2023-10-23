@@ -1,0 +1,15 @@
+text = input()
+new_text = ""
+capitalize = True
+    
+for i in range(len(text)):
+  if capitalize and text[i] != " ":
+      new_text += text[i].upper()
+      capitalize = False
+  else:
+      new_text += text[i]
+            
+  if text[i] in ['.', '!', '?']:
+      capitalize = True
+
+print(new_text)
